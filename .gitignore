@@ -2,7 +2,6 @@ cover.out
 
 bin/
 .idea/
-vendor
 cert.pem
 key.pem
 private.pem
