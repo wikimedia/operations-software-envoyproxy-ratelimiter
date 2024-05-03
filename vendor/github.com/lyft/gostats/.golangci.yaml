@@ -1,0 +1,22 @@
+linters:
+  disable-all: true
+  enable:
+    - gofumpt
+    - goimports
+    - gosimple
+    - govet
+    - ineffassign
+    - megacheck
+    - misspell
+    - nakedret
+    - revive
+    - staticcheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+issues:
+  max-per-linter: 0
+  max-same-issues: 0
+run:
+  deadline: 5m
