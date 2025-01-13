@@ -10,6 +10,6 @@ COPY script script
 
 RUN CGO_ENABLED=0 GOOS=linux go build -o /go/bin/ratelimit -ldflags="-w -s" -v github.com/envoyproxy/ratelimit/src/service_cmd
 
-FROM alpine:3.18.6@sha256:11e21d7b981a59554b3f822c49f6e9f57b6068bb74f49c4cd5cc4c663c7e5160 AS final
+FROM alpine:3.21.2@sha256:56fa17d2a7e7f168a043a2712e63aed1f8543aeafdcee47c58dcffe38ed51099 AS final
 RUN apk --no-cache add ca-certificates && apk --no-cache update
 COPY --from=build /go/bin/ratelimit /bin/ratelimit
