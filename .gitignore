@@ -4,7 +4,6 @@ bin/
 env/
 .idea/
 .vscode/
-vendor
 cert.pem
 key.pem
 private.pem
